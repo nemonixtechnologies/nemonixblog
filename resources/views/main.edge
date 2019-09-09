@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nemonix Blog</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700" rel="stylesheet">
+    <!-- CSS LIBRARY -->
+    {{ style ('template/css/font-awesome.min.css') }}
+    {{ style ('template/css/ionicons.min.css') }}
+    {{ style ('template/css/owl.carousel.min.css') }}
+    <link rel="shortcut icon" type="text/css" href="images/favicon.png" />
+    {{ style ('template/css/Pe-icon-7-stroke.min.css') }}
+    {{ style ('template/css/bootstrap-select.min.css') }}
+    {{ style ('template/css/slick-theme.css') }}
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    {{ style ('template/css/slick.css') }}
+    <!-- MAIN STYLE -->
+    {{ style ('template/css/styles.css') }}
+</head>
+
+<body class="blog-v1">
+    @include('inc/navbar')
+    <div class="container">
+        @!section('content')
+    </div>    
+
+    <!-- FOODTER -->
+    <footer class="footer footer-page">
+        <div class="footer-top">
+            <div class="container">
+                <div class="inner">
+                    <h5 class="title-h5">NEWSLETTER<br>TO GET IN TOUCH</h5>
+                    <form action="#">
+                        <input name="email" placeholder="Enter your e-mail" class="form-control" type="text">
+                    </form>
+                    <div class="btn-web btn-web-1">
+                        <a href="#" title="">Subscribe</a>
+                    </div>
+                </div>
+            </div>                
+        </div>
+        <div class="container">            
+            <div class="footer-bottom">
+                <div class="wrap-copyright">
+                    <div class="copyright">
+                        Copyright © 218 <a href="" title="">Plant</a>.Powered by <a href="http://engotheme.com/">EngoTheme</a>.
+                    </div>
+                    <div class="countries">
+                        <img src="images/icon/6.png" alt="">United States
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                        <div class="menu-footer">
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="social">
+                            <a href="#" title="facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                            <a href="#" title="facebook">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                            <a href="#" title="Pinterest">
+                            <i class="fa fa-pinterest-p"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+    
+    <!-- Search popup content -->
+    <div id="mymodal" class="modal fade mymodal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal"><span class="pe-7s-close"></span></button>
+
+                <form method="get" class="searchform" action="#">
+                    <div class="pbr-search input-group">
+                        <input name="search" maxlength="40" class="form-control input-large input-search" size="20" placeholder="Search…" type="text">
+                        <span class="input-group-addon input-large btn-search">
+                            <input value="" type="submit">
+                        </span>
+                    </div>
+                </form>
+            </div>                                
+        </div>
+    </div>
+    <!--SCOLL TOP-->
+    <a href="#" title="sroll" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
+    <!--END / SROLL TOP-->
+    <!-- LOAD JQUERY -->
+    {{ script('template/js/jquery-1.12.4.min.js') }}
+    {{ script('template/js/owl.carousel.min.js') }}
+    {{ script('template/js/bootstrap.min.js') }}
+    {{ script('template/js/slick.min.js') }}
+    {{ script('template/js/vit-gallery.js') }}
+    {{ script('template/js/jquery.countTo.js') }}
+    {{ script('template/js/jquery.appear.min.js') }}
+    {{ script('template/js/isotope.pkgd.min.js') }}
+    {{ script('template/js/bootstrap-select.js') }}
+    {{ script('template/js/jquery.littlelightbox.js') }}
+    {{ script('https://maps.googleapis.com/maps/api/js?key=AIzaSyBDyCxHyc8z9gMA5IlipXpt0c33Ajzqix4') }}
+    <!-- Custom jQuery -->
+    {{ script('template/js/function.js') }}
+</body>
+
+</html>

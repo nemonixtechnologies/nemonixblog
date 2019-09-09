@@ -1,0 +1,59 @@
+@layout('main')
+
+@section('content')
+    <h1>{{ title }}</h1>
+    @if(old('notification'))
+        <div class="alert alert-success">
+            {{old('notification')}}
+        </div>    
+    @endif
+     <!-- GALLERY -->
+     <div class="  blog-col gallery_1 clearfix ">
+            <div class="container">
+                <div class="gallery gallery-restaurant">
+                    <!-- GALLERY CONTENT -->
+                    <div class="gallery-content">
+                        <div class="row">
+                            <div class="gallery-isotope blog-col-3 section-blog-list clearfix">
+                                <!-- ITEM SIZE -->
+                                <div class="item-size "></div>
+                                <!-- END / ITEM SIZE -->
+                                <!-- ITEM Loop each post in database-->
+                @each(post in posts)   
+
+                                <div class="item-isotope suite dining ">
+                                    <div class="wrap-blog">
+                                        <div class="box-img">
+                                            <a class="lightbox " href="img/blog.png" data-littlelightbox-group="gallery" title="HIHI">
+                                                <img src="images/blog/1.jpg" class="img-responsive" alt="Product" title="images products"></a>
+                                        </div>
+                                        <div class="entry-content">
+                                            <div class="entry-between">
+                                                <span class="label">Category</span>
+                                                <span class="comment">3</span>
+                                            </div>
+                                            <div class="entry-meta">
+                                                <div class="entry-date">
+                                                    <p class="date">FEBRUARY 22, 2017</p>
+                                                </div>
+                                                <div class="entry-title">
+                                                    <a href="/posts/{{post.id}}">{{ post.title }}</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+
+                @endeach                               
+                                <!-- END / ITEM -->
+                            </div>
+                            <div class="btn-web-1 btn-web text-center">
+                                <a href="#" title=""><i class="fa fa-refresh fa-spin "></i>Load More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- GALLERY CONTENT -->
+                </div>
+            </div>
+        </div>
+@endsection
